@@ -154,7 +154,10 @@ if has("gui_running")
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
+"set encoding=utf8
+set enc=utf-8
+set fencs=utf-8,gb2312,gb18030
+set fenc=utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -203,7 +206,7 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
+" Map <Space> to / (search) and Shift-<Space> to ? (backwards search)
 map <space> /
 map <c-space> ?
 
